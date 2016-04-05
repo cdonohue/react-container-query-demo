@@ -1,0 +1,20 @@
+.common {
+  background: #4aa0d5;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.26);
+  display: flex;
+  flex: 1 1 0px;
+  height: 100%;
+  padding: 25px;
+  width: 100%;
+}
+
+.column {
+  composes: common;
+  flex-direction: column;
+}
+
+.row {
+  composes: common;
+  flex-direction: row;
+}
