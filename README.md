@@ -1,11 +1,17 @@
-# Container Queries with CSS Modules
-> Watch below and keep in mind that the three blue sections are all using the same component code. The top component changes its layout from _column_ to _row_ when it's own width is greater than `600px`
+# React Container Queries with CSS Modules
+
+###### Technologies used:
+- [react](https://facebook.github.io/react/)
+- [react-container-query](http://d6u.github.io/react-container-query/)
+- [webpack](https://github.com/webpack/webpack) (with [CSS modules](https://github.com/css-modules/css-modules))
+
+> Watch below and keep in mind that the three blue sections are all using the same component code. The components change their layout from _column_ to _row_ when component width is greater than `600px`
 
 ![Container Queries FTW](container-query.gif)
 
 Could you accomplish the above using media queries? Probably, but you would need to target the top component somehow. Why not let the components figure out how to display their content.
 
-How can we do this without media queries? Simple. Enter the *container query*.
+How can we do this without media queries? Simple. Enter the **container query**.
 
 Container queries are an in-progress CSS feature. Think of them as a media query for just the element. We can just apply `width` and `height` rules that define what classes the container should get at those specific definitions.
 
