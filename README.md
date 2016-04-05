@@ -14,8 +14,8 @@ This project uses [react](https://facebook.github.io/react/) and [react-containe
 We'll also use [CSS Modules](https://github.com/css-modules/css-modules) to make our styling a little more modular.
 
 Let's look at an example of two container queries (small and large). We'll say that `small` is any width up to `400px` and `large` is any width greater than `400px`. We'll just change the `background-color`.
-```
-// Widget.css
+```css
+/* Widget.css */
 .common {
   /* common styles */
 }
@@ -29,9 +29,8 @@ Let's look at an example of two container queries (small and large). We'll say t
   composes: common;
   background-color: tomato;
 }
-
------------------------------------------------------
-
+```
+```js
 // Widget.js
 import React, { Component } from "react";
 import classnames from "classnames";
@@ -51,6 +50,7 @@ class Widget extends Component {
   }
 }
 
+// See note below
 const query = {
   [styles.small]: {
     maxWidth: 400,
@@ -63,7 +63,14 @@ const query = {
 export default applyContainerQuery(Widget, query);
 ```
 
-Now we have a component that will have a background color of `firebrick` up until it's width reaches over `400px`, then it will change its background color to `tomato`.
+Elsewhere in another component...
+```html
+  ...
+  <Widget />
+  ...
+```
+
+That's it. Now we have a component that will have a background color of `firebrick` up until it's width reaches over `400px`, then it will change its background color to `tomato`.
 
 > Note: You might be asking why we are using computed property names in the container query. Good question. Since we are using CSS Modules to load our styles into the component, a hash is created from the css class to avoid clashing. So, by using computed properties here, we can take advantage of that hash while still using a human-readable name in the code.
 
