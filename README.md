@@ -5,7 +5,7 @@ Demonstration for using container queries when building components
 
 ![Container Queries FTW](container-query.gif)
 
-One way to accomplish this would be media queries. But... what if you wanted to have the smaller media query target for a larger screen?
+Could you accomplish the above using media queries? Probably, but you would need to target the top component somehow. Why not let the components figure out how to display their content.
 
 How can we do this without media queries? Simple. Enter the *container query*.
 
@@ -67,6 +67,7 @@ export default applyContainerQuery(Widget, query);
 
 Now we have a component that will have a background color of `firebrick` up until it's width reaches over `400px`, then it will change its background color to `tomato`.
 
+> Note: You might be asking why we are using computed property names in the container query. Good question. Since we are using CSS Modules to load our styles into the component, a hash is created from the css class to avoid clashing. So, by using computed properties here, we can take advantage of that hash while still using a human-readable name in the code.
 
 ### Installation and Demo
 1. `npm install`
