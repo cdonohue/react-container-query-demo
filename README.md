@@ -11,9 +11,9 @@ How can we do this without media queries? Simple. Enter the *container query*.
 
 Container queries are an in-progress CSS feature. Think of them as a media query for just the element. We can just apply `width` and `height` rules that define what classes the container should get at those specific definitions.
 
-This project uses `react` and `[react-container-query](http://d6u.github.io/react-container-query/)` to demonstrate the container query in action. 
+This project uses [react](https://facebook.github.io/react/) and [react-container-query](http://d6u.github.io/react-container-query/) to demonstrate the container query in action. 
 
-We'll also use CSS Modules to make our styling a little more modular.
+We'll also use [CSS Modules](https://github.com/css-modules/css-modules) to make our styling a little more modular.
 
 Let's look at an example of two container queries (small and large). We'll say that `small` is any width up to `400px` and `large` is any width greater than `400px`. We'll just change the `background-color`.
 ```
