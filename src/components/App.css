@@ -1,0 +1,36 @@
+html,
+body,
+body > * {
+  height: 100%;
+}
+
+.app {
+  background-color: #454553;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  background: #eb586f;
+  box-shadow: 0 5px 10px rgba(0,0,0,.54);
+  height: 128px;
+}
+
+.main {
+  flex: auto;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.container {
+  display: flex;
+  flex: 1 1 0px;
+  margin: 10px;
+}
