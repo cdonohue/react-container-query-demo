@@ -1,0 +1,10 @@
+.thing {
+  background: #d8e9f0;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.26);
+  display: flex;
+  flex: 1 1 0px;
+  margin: 10px;
+  min-height: 72px;
+  min-width: 72px;
+}
