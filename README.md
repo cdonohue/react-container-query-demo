@@ -72,7 +72,7 @@ Elsewhere in another component...
 
 That's it. Now we have a component that will have a background color of `firebrick` up until it's width reaches over `400px`, then it will change its background color to `tomato`.
 
-> Note: You might be asking why we are using [computed property names](https://github.com/lukehoban/es6features#enhanced-object-literals) in the container query. Good question. Since we are using CSS Modules to load our styles into the component, a hash is created from the css class to avoid clashing. So, by using computed properties here, we can take advantage of that hash while still using a human-readable name in the code.
+> Note: You might be asking why we are using [computed property names](https://github.com/lukehoban/es6features#enhanced-object-literals) in the container query. Good question. Since we are using CSS Modules to load our styles into the component, a hash is created from the css class to avoid clashing. So, by using computed properties here, we can take advantage of that hash while still using a human readable name in the code.
 
 ### Installation and Demo
 1. `npm install`
