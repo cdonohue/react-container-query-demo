@@ -1,4 +1,4 @@
-# React Container Queries with CSS Modules
+# Using React Container Queries
 
 ###### Technologies used:
 - [react](https://facebook.github.io/react/)
