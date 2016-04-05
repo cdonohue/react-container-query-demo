@@ -1,6 +1,4 @@
-# Container Queries
-Demonstration for using container queries when building components
-
+# Container Queries with CSS Modules
 > Watch below and keep in mind that the three blue sections are all using the same component code. The top component changes its layout from _column_ to _row_ when it's own width is greater than `600px`
 
 ![Container Queries FTW](container-query.gif)
