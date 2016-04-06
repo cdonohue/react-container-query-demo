@@ -5,7 +5,7 @@
 - [react-container-query](http://d6u.github.io/react-container-query/)
 - [webpack](https://github.com/webpack/webpack) (with [CSS modules](https://github.com/css-modules/css-modules))
 
-> Watch below and keep in mind that the three blue sections are all using the same component code. The components change their layout from _column_ to _row_ when component width is greater than `600px`
+> Watch below and keep in mind that the three grid sections are all using the same component code. The components change their layout from _column_ to _row_ when component width is greater than `600px`
 
 ![Container Queries FTW](container-query.gif)
 
