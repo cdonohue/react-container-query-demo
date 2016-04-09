@@ -7,7 +7,7 @@
 
 > Watch below and keep in mind that the three grid sections are all using the same component code. The components change their layout from _column_ to _row_ when component width is greater than `600px`
 
-![Container Queries FTW](container-query.gif)
+![Container Queries FTW](demo.gif)
 
 Could you accomplish the above using media queries? Probably, but you would need to target the top component somehow. Why not let the components figure out how to display their content.
 
