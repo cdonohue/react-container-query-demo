@@ -19,21 +19,21 @@ This project uses [react](https://facebook.github.io/react/) and [react-containe
 
 We'll also use [CSS Modules](https://github.com/css-modules/css-modules) to make our styling a little more modular.
 
-Let's look at an example of two container queries (small and large). We'll say that `small` is any width up to `400px` and `large` is any width greater than `400px`. We'll just change the `background-color`.
+Let's look at the example above with two container queries (columnLayout and rowLayout). We'll say that `columnLayout` is any width up to `600px` and `rowLayout` is any width greater than `600px`. We'll just change the `flex-direction`.
 ```css
 /* Widget.css */
 .common {
   /* common styles */
 }
 
-.small {
+.columnLayout {
   composes: common;
-  background-color: firebrick;
+  flex-direction: column;
 }
 
-.large {
+.rowLayout {
   composes: common;
-  background-color: tomato;
+  flex-direction: row;
 }
 ```
 ```js
@@ -58,11 +58,11 @@ class Widget extends Component {
 
 // See note below
 const query = {
-  [styles.small]: {
-    maxWidth: 400,
+  [styles.columnLayout]: {
+    maxWidth: 600,
   },
-  [styles.large]: {
-    minWidth: 401,
+  [styles.rowLayout]: {
+    minWidth: 601,
   },
 };
 
@@ -76,7 +76,7 @@ Elsewhere in another component...
 ...
 ```
 
-That's it. Now we have a component that will have a background color of `firebrick` up until it's width reaches over `400px`, then it will change its background color to `tomato`.
+That's it. Now we have a component that will layout it's children in a `column` up until it's width reaches over `600px`, then it will change its layout to `row`.
 
 > Note: You might be asking why we are using [computed property names](https://github.com/lukehoban/es6features#enhanced-object-literals) in the container query. Good question. Since we are using CSS Modules to load our styles into the component, a hash is created from the css class to avoid clashing. So, by using computed properties here, we can take advantage of that hash while still using a human readable name in the code.
 
