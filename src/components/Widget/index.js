@@ -22,11 +22,11 @@ class Widget extends Component {
 }
 
 const containerQuery = {
-  [styles.column]: {
+  [styles.columnLayout]: {
     maxWidth: 600,
   },
 
-  [styles.row]: {
+  [styles.rowLayout]: {
     minWidth: 601,
   },
 };
